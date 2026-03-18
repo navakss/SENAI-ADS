@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora - Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo locadora sem fundo.png" alt="logo">
+        <h1>Tela Play - Locadora</h1>
+        <button onclick="abrirModal()">+ Novo Filme</button>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Capa</th>
+                    <th>Nome</th>
+                    <th>Gênero</th>
+                    <th>Autor(a)</th>
+                    <th>Lançamento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="dados"></tbody>
+        </table>
+    </main>
+    <!--Criar Modal-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Novo Filme</h2>
+            <input type="url" id="capa" placeholder="URL da capa do filme">
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="genero" placeholder="Gênero">
+            <input type="text" id="autor" placeholder="Autor(a)">
+            <input type="date" id="lancamento">
+           
+            <div class="modal-buttons">
+                <button onclick="salvarCliente()">Salvar</button>
+                <button onclick="fecharModal()">Cancelar</button>                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
