@@ -12,8 +12,25 @@ const limiteParticipantes = async (usuarioId, eventoId) => {
 
     console.log(numeroPartcipantes);
 
+    if(numeroPartcipantes == evento.capacidade_maxima) {
+        return "LISTA_ESPERA";
+    } else {
+        return "CONFIRMADA";
+    }
 };
 
+const verificarDuplicidade = async(usuarioId, eventoId) => {
+    const cadastro = await prisma.inscricoes.findMany({
+        where: {
+            eventosId: eventoId,
+            usuariosId: usuarioId
+        }
+    });
+
+    if(cadastro.length > 0) throw new Error("Usuário já cadastrado.");
+}
+
     module.exports = {
-        limiteParticipantes
+        limiteParticipantes,
+        verificarDuplicidade
     }

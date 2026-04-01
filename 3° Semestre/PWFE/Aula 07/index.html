@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Dona Benta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="assets/logo sem fundo.png" alt="logo" class="logo">
+            <h1>Receitas Dona Benta</h1>
+        </div>
+        <button class="btn-novo" onclick="abrirModal()">+ Nova Receita</button>
+    </header>
+
+    <main id="container-cards">
+        </main>
+
+    <div id="modalRec" class="modal-overlay">
+        <form id="formReceita" class="modal-content">
+            <h2>Nova Receita</h2>
+            <input type="text" id="nome" placeholder="Nome da Receita" required>
+            <input type="text" id="tipo" placeholder="Tipo (Ex: Sobremesa)" required>
+            <textarea id="ingredientes" placeholder="Ingredientes (separe por vírgulas)" required></textarea>
+            <textarea id="modofazer" placeholder="Modo de Preparo" rows="5" required></textarea>
+            <input type="text" id="img" placeholder="URL da Imagem" required>
+            <input type="text" id="custo" placeholder="Custo Aproximado (R$)">
+
+            <div class="modal-buttons">
+                <button type="submit" class="btn-save">Salvar</button>
+                <button type="button" class="btn-cancel" onclick="fecharModal()">Cancelar</button>    
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <h3>&copy; Receitas Dona Benta. Todos direitos reservados.</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
