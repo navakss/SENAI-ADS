@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Eventos</h1>
+        <button>Cadastrar</button>
+    </header>
+
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Data</th>
+                <th>Local</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+
+    <div id="modal-container" class="modal">
+        <div class="modal-content">
+            <h2>Cadastrar Novo Evento</h2>
+            <form id="info-evento">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+
+                <label for="local">Local:</label>
+                <input type="text" id="local" required>
+
+                <div class="modal-actions">
+                    <button type="button" id="modal-fechar">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
