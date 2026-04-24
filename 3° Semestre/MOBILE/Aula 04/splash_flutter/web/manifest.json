@@ -1,6 +1,6 @@
 {
-    "name": "splash_flutter",
-    "short_name": "splash_flutter",
+    "name": "splash",
+    "short_name": "splash",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
