@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(29, 29, 29);
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    align-items: center;
+}
+
+heaer nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}

@@ -1,0 +1,103 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-04-29T12:36:56.750Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_loja",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "loja"
+    },
+    {
+      "_id": "fld_Product",
+      "_type": "request_group",
+      "parentId": "fld_loja",
+      "name": "Product"
+    },
+    {
+      "_id": "req_Product_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Product",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/product/listar"
+    },
+    {
+      "_id": "req_Product_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Product",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/product/buscar/:id"
+    },
+    {
+      "_id": "req_Product_POST",
+      "_type": "request",
+      "parentId": "fld_Product",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/product/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"preco\": null,\n  \"imageUrl\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Product_PUT",
+      "_type": "request",
+      "parentId": "fld_Product",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/product/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"preco\": null,\n  \"imageUrl\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Product_DELETE",
+      "_type": "request",
+      "parentId": "fld_Product",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/product/excluir/:id"
+    }
+  ]
+}
