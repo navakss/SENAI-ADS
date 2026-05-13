@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="eventos.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+        <h1 class="logo">GitParty</h1>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="eventos.html">Eventos</a>
+        </nav>
+    </div>
+</header>
+
+<section class="container actions">
+
+    <button class="btn" id="btn-evento">
+        + Adicionar Evento
+    </button>
+
+    <button class="btn" id="btn-usuario">
+        + Adicionar Usuário
+    </button>
+
+</section>
+
+<!-- MODAL EVENTO -->
+<div class="modal" id="modal-evento">
+    <div class="modal-content">
+
+        <h2>Criar Evento</h2>
+
+        <form id="form-evento-modal">
+
+            <input id="titulo-evento" placeholder="Título">
+            <input id="descricao-evento" placeholder="Descrição">
+            <input id="data-evento" type="date">
+            <input id="local-evento" placeholder="Local">
+            <input id="capacidade-evento" type="number">
+            <input id="imagem-evento" placeholder="URL da imagem" required>
+
+            <button class="btn">Salvar Evento</button>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- MODAL USUÁRIO -->
+<div class="modal" id="modal-usuario">
+    <div class="modal-content">
+
+        <h2>Criar Usuário</h2>
+
+        <form id="form-usuario-modal">
+
+            <input id="nome-usuario" placeholder="Nome">
+            <input id="email-usuario" placeholder="Email">
+            <input id="senha-usuario" type="password" placeholder="Senha">
+
+            <button class="btn">Salvar Usuário</button>
+
+        </form>
+
+    </div>
+</div>
+
+<section class="container">
+    <h2>Eventos</h2>
+    <div id="lista-eventos"></div>
+</section>
+
+<section class="container">
+    <h2>Usuários</h2>
+    <div id="lista-usuarios"></div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

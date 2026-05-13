@@ -1,0 +1,29 @@
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-text{
+    max-width:650px;
+}
+
+.hero-text h2{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.1rem;
+    color:#bdbdbd;
+    margin-bottom:30px;
+}
+
+.preview{
+    padding-bottom:100px;
+}
+
+.preview-card{
+    padding:40px;
+}

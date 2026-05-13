@@ -1,0 +1,115 @@
+.actions {
+    padding: 40px 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* TITULOS */
+section h2 {
+    font-size: 1.6rem;
+    margin: 25px 0;
+    color: #d991ff;
+}
+
+/* LISTAS */
+#lista-eventos,
+#lista-usuarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding-bottom: 60px;
+}
+
+/* CARD */
+.evento-card {
+    background: #0d111f;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 0.3s;
+}
+
+.evento-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* IMAGEM */
+.evento-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CONTEUDO */
+.evento-content {
+    padding: 18px;
+}
+
+.evento-content h3 {
+    margin-bottom: 8px;
+}
+
+.evento-content p {
+    color: #bdbdbd;
+    margin-bottom: 10px;
+}
+
+.evento-content span {
+    color: #00e5ff;
+    font-size: 0.9rem;
+}
+
+/* DELETE */
+.delete-btn {
+    margin-top: 12px;
+    background: #ff3b5c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(6px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 520px;
+    background: #0d111f;
+    padding: 35px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.modal-content input {
+    background: #131a2d;
+    color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+}
+.evento-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+}
